@@ -20,7 +20,7 @@ const Contact = () => {
         e.preventDefault();
         setStatus('Sending...');
         try {
-            const response = await fetch('http://localhost:5001/contact', {
+            const response = await fetch('https://portfolio-b0ys.onrender.com/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
