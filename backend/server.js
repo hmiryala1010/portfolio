@@ -12,7 +12,7 @@ const port = process.env.PORT || 5001;
 
 // CORS Configuration
 const corsOptions = {
-    origin: ['http://localhost:3000','https://miryalahasini.netlify.app/'], 
+    origin: ['https://miryalahasini.netlify.app/'], 
     optionsSuccessStatus: 200,
 };
 
