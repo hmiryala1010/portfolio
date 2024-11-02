@@ -8,10 +8,11 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = 5001;
+const port = process.env.PORT || 5001;
+
 // CORS Configuration
 const corsOptions = {
-    origin: ['http://localhost:3000','https://miryalahasini.netlify.app/'], // Allow both local and deployed URLs
+    origin: ['http://localhost:3000','https://miryalahasini.netlify.app/'], 
     optionsSuccessStatus: 200,
 };
 
